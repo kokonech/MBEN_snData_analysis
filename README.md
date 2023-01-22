@@ -10,7 +10,7 @@ The repository contains source code for the single nuclei data analysis for the 
 
 ### snRNAsesq_10X ###
 
-_10X single nuclei data analysis_
+_10X single nuclei data analysis (R 4.1)_
 
 Processing reads with CellRanger:
 run_cellranger.sh
@@ -33,7 +33,7 @@ post_analysis subfolder (includes additional documentation)
 
 ### snRNAseq_ss2 ###
 
-_Smart-seq2 snRNA-seq data analysis_
+_Smart-seq2 snRNA-seq data analysis (R 4.1, python 2.8)_
 
 Align reads per cell:
 run_STAR.sh
@@ -52,7 +52,7 @@ processTumorSampleSmartSeq2.R
 
 ### spatial_RB ###
 
-_Resolve Bioscence spatial data analysis_
+_Resolve Bioscence spatial data analysis (R 4.1)_
 
 Seurat per sample analysis:
 resolveSeurat.R
@@ -63,8 +63,8 @@ giotto_per_sample.R
 Combined analysis for merged cohort:
 resolveMergedAnalysis.R
 
-
-
+### sessionInfo ###
+Details of R enviroment suitable for packages run
 
 
 
