@@ -1,8 +1,18 @@
-## DATA ANALYSIS CODE OVERVIEW ##
+## OVERVIEW ##
 
-** 10X analysis per sample **
+The repository contains source code for the single nuclei data analysis for the study
 
-Processing with CellRanger:
+*Ghasemi et al "Compartments in medulloblastoma with extensive nodularity are connected through differentiation along the granular precursor lineage"*
+
+[Bioarxiv link](https://www.biorxiv.org/content/10.1101/2022.09.02.506321v1.abstract)
+
+## DIRECTORY CONTENTS ##
+
+### snRNAsesq_10X ###
+
+_10X single nuclei data analysis_
+
+Processing reads with CellRanger:
 run_cellranger.sh
 
 Seurat main analysis:
@@ -14,10 +24,12 @@ runDecontX_perSample.R
 SingleR comparison to reference:
 runSingleR_perSample.R
 
-Infer CNV calling:
+Infer CNV copy number profiling:
 runInferCNV_perSample.R
 
-** Smart-seq2 data analysis per sample **
+### snRNAseq_ss2 ###
+
+_Smart-seq2 snRNA-seq data analysis_
 
 Align reads per cell:
 run_STAR.sh
@@ -31,19 +43,23 @@ summarizeComputedCounts.py
 Convert gene IDs to names:
 renameCounts.py
 
-Seurat standard analysis:
+Seurat main analysis:
 processTumorSampleSmartSeq2.R
 
-** Resolve Bioscence data analysis **
+### spatial_RB ###
+
+_Resolve Bioscence spatial data analysis_
 
 Seurat per sample analysis:
 resolveSeurat.R
 
-Combined analysis for merged samples:
-resolveMergedAnalysis.R
-
 Giotto additional analysis (cell proximity):
 giotto_per_sample.R
+
+Combined analysis for merged cohort:
+resolveMergedAnalysis.R
+
+
 
 
 
