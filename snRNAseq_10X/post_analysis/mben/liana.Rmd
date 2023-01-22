@@ -1,0 +1,180 @@
+---
+title: "MBEN - LIANA"
+author: "Hanna Schumacher"
+output:
+  bookdown::html_document2:
+    toc: true
+    fig_caption: true
+    template: flatly
+paramsPlot:
+  date: !r Sys.Date()
+---
+
+# LIANA {.tabset .tabset-fade}
+
+This notebook leads through the ligand-receptor analysis with the tool LIANA. The file *MB_all_t* is used as input.  
+
+The steps are:  
+
+1. Read in data and define filepaths. Create an analysis object that stores this information.
+2. Run liana_wrap() on the data and liana_aggregate() on the result. 
+3. Run liana_dotplot with the top 25 results according to the aggregate rank.
+4. Run liana heat_freq() for aggregate_rank <= 0.01 .
+
+
+## Libraries
+```{r message=FALSE, warning=FALSE}
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager", version= "1.30.19")
+
+if (!requireNamespace("remotes", quietly = TRUE))
+    install.packages("remotes")
+
+BiocManager::install("OmnipathR")
+remotes::install_github('saezlab/liana', ref = "0.1.6")
+
+install.packages("../seqDataAnalysisSc", repos = NULL, type="source")
+
+sapply(c(
+  "magrittr", "yaml", "functional", "zeallot", "renv",
+  "OmnipathR", "liana", "SingleCellExperiment", "Seurat"
+  ), seqDataAnalysisSc::loadPackage)
+
+
+renv::restore()
+```
+
+## Paths
+```{r}
+#' @params 
+analysisversion <- "/v00"
+host <- "human"
+seqType <- "sn"
+rel_path_to_proj <- "../projects/MBEN/"
+```
+
+```{r}
+analysis_params <- yaml::read_yaml(paste0(rel_path_to_proj, "analysis_params_paths.yaml"))
+dataset_names <- names(analysis_params$other)[c(1)]
+datasetpath_part2 <- paste(analysisversion, host, seqType, sep = "/")
+datapath <- analysis_params$default$paths$storagepath_local %>% paste(collapse = "/") %>% paste0(datasetpath_part2)
+datasetpath <- analysis_params$default$paths$analysispath_local %>% paste(collapse = "/") %>% paste0(datasetpath_part2)
+
+rm(datasetpath_part2)
+```
+
+## Init Analysis Obj.
+```{r message=FALSE, warning=FALSE}
+# Read Data
+datasets <- seqDataAnalysisSc::read_data(dataset_names, datapath, analysis_params, readRDS)
+# To SCE
+sces <- sapply(datasets, Seurat::as.SingleCellExperiment)
+# Init analysis object
+analysis <- seqDataAnalysisSc::create_analysis_obj(sces, datasetpath)
+
+rm("analysisversion", "host", "seqType", "rel_path_to_proj", "analysis_params", "dataset_names", "datapath", "datasetpath", "datasets", "sces")
+```
+
+
+Access example: 
+`r analysis[["all_t"]]$config$resultpath`
+
+`r table(sces$all_t@colData$PID)`
+
+## Run Liana
+```{r}
+#' @function run_liana
+#' @description Runs liana_wrap & liana_aggregate, if files not already exist, else reads in files.
+run_liana <- function(datasetname, analysis){
+  dir <- analysis[[datasetname]]$analysis_params$paths$lianadir %>% paste(collapse = "/")
+  sce <- analysis[[datasetname]]$data
+  res <- list()
+  sources <- c("natmi", "connectome", "logfc", "sca", "cellphonedb")
+  
+  res_dir <- paste0(analysis[[datasetname]]$config$resultpath, "/seurat_clusters/")
+  dir.create(res_dir)
+  
+  filesExist <- sapply(sources, function(sourcename){
+    file.exists(paste0(res_dir, sourcename, ".csv")) 
+  })
+  filesExist <- sum(filesExist) == length(sources)
+  if(!filesExist){
+    SingleCellExperiment::colLabels(sce) <- sce@colData$seurat_clusters
+    res <- sce %>% liana_wrap()
+    sapply(names(res), function(sourcename){
+      write.csv(res[[sourcename]], paste0(res_dir, sourcename, ".csv"))
+    })
+    print("Tables are saved.")
+  }else{
+    res <- sapply(sources, function(sourcename){
+      read.csv(paste0(res_dir, sourcename, ".csv"))
+    })
+    names(res) <- sources
+    res <- sapply(res, tibble::as_tibble)
+    print("Tables are read in.")
+  }
+  
+  # Aggregate 
+  agg <- tibble::tibble()
+  agg_dir <- paste0(analysis[[datasetname]]$config$resultpath, "/aggregated/")
+  agg_file <- paste0(agg_dir, "aggregation.csv")
+  dir.create(agg_dir)
+
+  if(!file.exists(agg_file)){
+    agg <- res %>% liana_aggregate()
+    write.csv(agg, agg_file)
+    agg
+  }else{
+   agg <- read.csv(agg_file) %>% tibble::as_tibble()
+  }
+  analysis[[datasetname]]$liana$res <- res
+  analysis[[datasetname]]$liana$agg <- agg
+  analysis
+}
+analysis <- run_liana("all_t", analysis)
+
+```
+
+## Dotplot & Heatmap
+```{r}
+
+plot_liana_results <- function(datasetname, analysis){
+  agg <- analysis[[datasetname]]$liana$agg
+  pdf(file = paste0(analysis[[datasetname]]$config$figpath, "/dotplot.pdf"),  width = 12, height = 10)
+    clustervalues <- levels(droplevels(as.factor(agg$source)))
+    agg$source <- factor(agg$source)
+    agg$target <- factor(agg$target)
+    agg %>%
+        dplyr::top_n(25, dplyr::desc(aggregate_rank)) %>%
+        liana_dotplot(source_groups = c(), target_groups = c(clustervalues)) %>% plot
+  dev.off()
+  print("Dotplot is saved.")
+  
+  pdf(paste0(analysis[[datasetname]]$config$figpath, "/heatmap.pdf"),  width = 7, height = 6) 
+    agg %>% 
+      dplyr::filter(aggregate_rank <= 0.01) %>% 
+      heat_freq %>% plot
+  dev.off()
+  print("Heatmap is saved.")
+}
+
+sapply(names(analysis), function(datasetname) plot_liana_results(datasetname, analysis))
+
+```
+
+# Seurat -> AnnData 
+Conversion for Decoupler analysis.
+
+```{r eval=FALSE, include=FALSE}
+#' @function convertFromSeuratToH5ad
+convertFromSeuratToH5ad = function (seuratData, datasetpath){
+  SeuratDisk::SaveH5Seurat(seuratData, filename = paste0(datasetpath, ".h5Seurat"))
+  SeuratDisk::Convert(paste0(datasetpath, ".h5Seurat"), dest = "h5ad")
+}
+# for each dataset
+sapply(names(datasets), function(dataset_name){
+  path <-  paste(datapath, dataset_name, "data", dataset_name, sep = "/")
+  convertFromSeuratToH5ad(datasets[[dataset_name]], path)
+})
+```

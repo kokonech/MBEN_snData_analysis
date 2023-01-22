@@ -1,0 +1,29 @@
+---
+title: "Introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(seqDataAnalysisSc)
+```
+
+This vignette was created with the command `usethis::use_vignette()`. 
+
+
+```{r}
+read_data
+```
+
+
+

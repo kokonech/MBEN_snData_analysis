@@ -1,0 +1,84 @@
+[2023-01-17 17:05:04] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:04] [INFO]    [OmnipathR] Initialized cache: `/Users/hanna/Library/Caches/OmnipathR`.
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-01-17 17:05:04] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:12] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:12] [INFO]    [OmnipathR] Initialized cache: `/Users/hanna/Library/Caches/OmnipathR`.
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-01-17 17:05:12] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:20] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:20] [INFO]    [OmnipathR] Initialized cache: `/Users/hanna/Library/Caches/OmnipathR`.
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-01-17 17:05:20] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:29] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:29] [INFO]    [OmnipathR] Initialized cache: `/Users/hanna/Library/Caches/OmnipathR`.
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-01-17 17:05:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:38] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:38] [INFO]    [OmnipathR] Initialized cache: `/Users/hanna/Library/Caches/OmnipathR`.
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-01-17 17:05:38] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:46] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:46] [INFO]    [OmnipathR] Initialized cache: `/Users/hanna/Library/Caches/OmnipathR`.
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-01-17 17:05:46] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:55] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:55] [INFO]    [OmnipathR] Initialized cache: `/Users/hanna/Library/Caches/OmnipathR`.
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] Reading JSON from `/Users/hanna/Library/Caches/org.R-project.R/R/renv/library/seqDataAnalysisSc-7c30ca2b/R-4.2/x86_64-apple-darwin17.0/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-01-17 17:05:55] [TRACE]   [OmnipathR] JSON validation successful: TRUE

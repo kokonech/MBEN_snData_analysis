@@ -2,7 +2,7 @@
 
 The repository contains source code for the single nuclei data analysis for the study
 
-*Ghasemi et al "Compartments in medulloblastoma with extensive nodularity are connected through differentiation along the granular precursor lineage"*
+*D.R. Ghasemi, K.Okonechnikov et al "Compartments in medulloblastoma with extensive nodularity are connected through differentiation along the granular precursor lineage"*
 
 [Bioarxiv link](https://www.biorxiv.org/content/10.1101/2022.09.02.506321v1.abstract)
 
@@ -26,6 +26,10 @@ runSingleR_perSample.R
 
 Infer CNV copy number profiling:
 runInferCNV_perSample.R
+
+Analysis Decoupler and LIANA:
+post_analysis subfolder (includes additional documentation)
+
 
 ### snRNAseq_ss2 ###
 
